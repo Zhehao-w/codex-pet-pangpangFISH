@@ -8,13 +8,13 @@
 
 - Codex Hatch Pet V2 格式
 - 8 × 11 动画网格
-- 1536 × 2288 WebP 精灵图
+- 1536 × 2288 WebP 鱼图
 - 透明背景
 - 包含待机、奔跑、工作、失败、等待、悬停和 16 个观察方向
 
-## 精灵图预览
+## 鱼图预览
 
-![蓝色大肥鱼 Codex Pet V2 精灵图](./spritesheet.webp)
+![蓝色大肥鱼 Codex Pet V2 鱼图](./spritesheet.webp)
 
 ## 安装
 
