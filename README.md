@@ -1,60 +1,74 @@
-# DeepSeek 蓝色大肥鱼 Codex Pet
+# 蓝色大肥鱼 Codex Pets
 
-> 一只住在 Codex 桌面里的蓝色大肥鱼。
+> 我是吃白饭的蓝色大肥鱼！
 
-我是吃白饭的蓝色大肥鱼！
+女仆装与冬装两只大肥鱼，可以分别安装，也可以同时保留。
+
+| 目录 | 桌宠名称 | 设定 |
+|---|---|---|
+| `deepseek/` | DeepSeek | 女仆装；捧碗待机、叉腰挺胸、奔跑、吃白饭和趴睡 |
+| `deepseek-winter/` | 冬装蓝色大肥鱼 | 鲸鱼毛绒帽、蓝白围巾和冬衣；空手待机、叉腰挺胸、端碗奔跑、吃白饭和冬装趴睡 |
+
+两只都包含 16 个视线方向，会跟着鼠标看过去。
 
 ## 鱼图预览
 
+### 女仆装 · DeepSeek
+
 <p align="center">
-  <img src="./spritesheet.webp" alt="DeepSeek 蓝色大肥鱼 Codex Pet V2 鱼图" width="768">
+  <img src="./deepseek/spritesheet.webp" alt="女仆装蓝色大肥鱼 V2 鱼图" width="512">
+</p>
+
+### 冬装 · 冬装蓝色大肥鱼
+
+<p align="center">
+  <img src="./deepseek-winter/spritesheet.webp" alt="冬装蓝色大肥鱼 V2 鱼图" width="512">
 </p>
 
 ## 安装
 
-1. 下载或克隆本仓库。
-2. 创建 Codex 桌宠目录：
+从 [最新 Release](https://github.com/Zhehao-w/codex-pet-pangpangFISH/releases/latest) 下载需要的安装包：
 
-   ```text
-   ~/.codex/pets/deepseek/
-   ```
+- [deepseek.zip](https://github.com/Zhehao-w/codex-pet-pangpangFISH/releases/latest/download/deepseek.zip)：女仆装。
+- [deepseek-winter.zip](https://github.com/Zhehao-w/codex-pet-pangpangFISH/releases/latest/download/deepseek-winter.zip)：冬装。
+- [SHA256SUMS](https://github.com/Zhehao-w/codex-pet-pangpangFISH/releases/latest/download/SHA256SUMS)：两个 ZIP 的 SHA256 校验值。
 
-3. 将 `pet.json` 和 `spritesheet.webp` 复制到该目录。
-4. 完全退出并重新打开 Codex，然后选择 **DeepSeek** 桌宠。
-
-安装完成后的目录结构：
+将 ZIP 内的宠物文件夹解压到 `~/.codex/pets/`。也可以克隆本仓库，将 `deepseek/` 和 `deepseek-winter/` 文件夹复制过去。
 
 ```text
-~/.codex/pets/deepseek/
-├── pet.json
-└── spritesheet.webp
+~/.codex/pets/
+├── deepseek/
+│   ├── pet.json
+│   └── spritesheet.webp
+└── deepseek-winter/
+    ├── pet.json
+    └── spritesheet.webp
 ```
 
-如果曾经安装过同 ID 的旧版本，请替换这两个文件后重启 Codex，避免继续显示缓存的旧鱼图。
+完全退出并重新打开 Codex，在宠物选择器中选择 **DeepSeek** 或 **冬装蓝色大肥鱼**。更新同 ID 的旧版本时，替换对应目录中的两个文件后重启 Codex。
 
-## 动作与性格
+下载两个 ZIP 和 `SHA256SUMS` 后，可在下载目录执行：
 
-- **待机**：捧着空碗，期待地向你讨要 Token。
-- **悬停**：双手叉腰、挺胸抬头，理直气壮地表示自己还没吃饱。
-- **运动**：快速奔跑，头发、裙摆和鲸鱼尾巴会随动作摆动。
-- **工作与等待**：在忙碌、思考和等待中保持她又馋又困的大肥鱼性格。
-- **视线跟随**：包含 16 个观察方向，会跟着鼠标看过去。
+```bash
+shasum -a 256 -c SHA256SUMS
+```
 
-## 文件说明
+## 仓库结构与文件
 
-| 文件 | 用途 |
-|---|---|
-| `pet.json` | 桌宠名称、描述和 Codex V2 配置 |
-| `spritesheet.webp` | 包含全部动画帧和观察方向的透明 WebP 鱼图 |
+```text
+.
+├── README.md
+├── deepseek/
+│   ├── pet.json
+│   └── spritesheet.webp
+└── deepseek-winter/
+    ├── pet.json
+    └── spritesheet.webp
+```
 
-鱼图规格：
+每个宠物目录只包含两个文件：`pet.json` 保存名称、描述和 V2 配置；`spritesheet.webp` 是包含全部动画帧和观察方向的透明鱼图。
 
-- Codex Hatch Pet V2
-- 1536 × 2288 像素
-- 8 列 × 11 行
-- 单格 192 × 208 像素
-- 透明背景
-- `spriteVersionNumber: 2`
+两只均采用 Codex Hatch Pet V2：1536 × 2288 像素、8 列 × 11 行、单格 192 × 208 像素，`spriteVersionNumber: 2`。
 
 ## 同人作品声明
 
